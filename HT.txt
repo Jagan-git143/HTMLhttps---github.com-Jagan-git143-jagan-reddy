@@ -1,0 +1,533 @@
+Tag vs elements:
+<h1><h1>==== h1 element
+<a><a>====anchor element
+elemets are nothing but content with tags
+
+There are two types of elements:
+1.inline: these elemets are nothng but side side
+ex:anchor tag,img,formatting tags 
+2.block:these elements that does not allow side side elements
+ex;headings,p,lists,tables,semantic elements
+
+General block element:
+1.<div>--block element which used to seperate the line
+2.<span> Inline elemet which used to combine the line
+
+Q: create a image and anchor tag make them in different lines using block elements and inline
+<div>
+    <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Jagan" height="200"/>
+    </div>
+    <a href="to open this ">click me</a>
+
+
+semantic elements:
+    There are some elements which are used to make search engine
+    that understands our code easily
+    eg:header,main,nav,aside,footer,section,article.figure,
+
+Forms: Form is used to collect user data/ information from tha data
+eg:login, registration, address,forget password, job post, application,feedback,attendance, contact form, survey forms, ticket booking forms
+
+forms uses "form" element to inckude all forms input
+Input boxes/fields are created using input tag
+input tag is self closing tag
+every input tag will have some properties such as ie; 
+1.type:is uses to define different types of imputs
+ex:"text","number"....
+2.placeholder: it another dummy text on input know the user what to enter
+
+ex:<input type="text" placeholder="enter username">
+
+
+3.ID: to uniquely identify the input we use id, we can also use label tag for labelling and connects lables for with inputs id so that label can activate input
+
+eg:<label for= "inp1"> name: </label>
+<input type=text id='inp2'>
+
+
+4.name Attribute: name is used to store the value with certain name  while sending it to an another file(form submission)
+
+5.value: every value user enter in input is stored as value we can explcitly enter our own pre defilled value
+
+ex:<label for="inp">
+        User Name:
+       </label> 
+        <input type="text" placeholder="eg: jagan" id="inp" name="un" value="sunny">
+
+Radio buttons are used only used to chhose one option/element
+eg:gender
+
+check boxes: wecan select all boxes
+label+input:shortcut
+
+diffeent inputs:
+text: it is used for text information
+email:email input is used to enter email (it wont accept without@)
+password: enter password (text is default hidden)
+number: is used to enter numerical values
+color:choose a prefer color
+date:used to select the date
+datetime_local:used to select the date and time 
+time/week/month:ued to select time/week/month
+url:enter diff urls address
+button:used to generate a button to submit
+reset:it used to generate button that reset form inputs
+radio:used to generate (we have to give labels to identify this selection for user end we have to keep same name attribute )
+checkbox:similaar to radio buttons but in radio button it only slect one to choose in check box we can select multi slections
+
+
+to get drop down we can use select element
+using option tag
+
+<select>
+option value=""></optio>
+</select>
+to select multiple selection, we can use multiple
+we can even group options by using optgroup with label
+Form validation:
+reuired
+readonly
+disable
+max
+min
+mac length
+min length
+sixe
+pattern: it uses regular expression
+
+
+Font awsome libraries
+CDN
+
+
+Media: HTML can also include different media wep page such as video,audio etcc
+video: it can be includede in  html by video element with source tag containing the source of video
+<video>
+<source src="path">
+</video>
+ we can also use height,width as video attribute
+Audio:it can be included in html bu audio element with source tag containing the source of audio
+<audio>
+<source src="">
+</audio>
+note: we have to add attribute controls to make video or audio work
+iframe is used to include any external resources such as pdf,doc,img, youtube,external website
+<iframe="0" src="path">
+Icons:we can include iconsinto html to libraries such as "fontawesome" 
+
+----include/link CDN link fontawesome in html head---
+---go to fontawesome select any icon---
+--copy its html  code and paste in html
+
+Figure: figure element is used to incude images with caption
+<figure>
+<img src="path" alt="">
+<fig caption>my image</figcaption>
+</figure>
+picture: it is used to get the responsive images based on devices
+<picture>
+<source media=() srcset="">
+<source media=() srcset="">
+<img src="path" alt="">
+</picture>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CASCADING STYLE SHEETS:
+======
+RULE SET:  SELECTOR {
+			PROPERTY: VALUE1;
+			PROPERTY: VALUE2;
+		}
+
+ for sleector we have to give suitable name like: h-center or as your own name you can give.
+
+CSS ruel set: to center elements
+--------------------------
+  
+    SELECTOR
+        :
+       .h-center {
+		text-align: center;
+		}   
+		     :          :
+		property      value
+
+
+
+
+
+HTML ATTRIBUTE PROVIDES ADDITIONAL INFORMATION ABOUT HTML:
+
+EXAMPLE, colour,textsixe,shape,underlines etc....
+
+
+
+
+
+How to add html attribute to the html element..?
+
+<tag attribute =                 "value">content</tag>
+ :      : 	                    :
+	attr name syntax name  attribute value
+start tag
+
+
+<h1 class="h-center">tourism</h1>
+
+
+
+container is also one html element
+  <div>OTHER ELEMENTS</div>
+1.
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>staticwebsite</title>
+  </head>
+  <body>
+      <div class="h-center">
+          <h1>Tourism</h1>
+          <p>Plan your trip wherever you want to go</p>
+          <button>Get Started</button>
+       </div>
+  </body>
+</html>
+
+
+
+Wrapping: grouping all elements together
+
+
+INTRODUCTION TO CSS PART 2:
+---------------------------
+
+
+Lets add colour to the text
+
+ applying color to main heading   
+
+
+	selector
+	   : 
+        .main-heading {
+		color: blue;
+	}         :      :
+			value
+		property
+
+
+
+ATTRIBUTE NAME : CLASS
+ATTRIBUTE VALUE: .MAIN-HEADING
+
+
+
+<h1 class="main-heading">tourism</h1>
+
+
+applying colour to paragaraph:
+--------------------
+ 	selector
+          :
+	.paragraph {
+		color:grey;
+}
+
+
+
+
+
+
+BACKGROUND COLOR:
+-------------------
+to change beckground we use div inside class =card {<div class="card">}
+
+html rulesets:
+------------
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+      <div class="card">
+          <h1 class="main-heading">Tourism</h1>
+          <p class="paragraph">plan where ever you want to go</p>
+          <button class="button">Lets get started</button>
+          </div>
+    
+  </body>
+</html>
+
+css code:rule sets
+------------
+.main-heading {
+    color:red;
+}
+
+.paragraph {
+    color:black;
+}
+
+
+.button {
+    color:black;
+}
+
+.card {
+    background-color: lightblue;
+}
+
+
+
+
+Differences styles about the words:
+-------------------
+
+font-family:roboto
+font-family:"cavet"
+
+fon
+
+
+
+font properties:
+------
+
+
+.main-heading{
+    color: black;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+
+
+
+
+Introduction to CSS BOX MODEL:
+-------------------------
+
+APPLYING HEIGHT TO THE DIV PROPERTIES:
+
+
+	.card {
+		back-ground colour:lightble;
+			text-aligh:center;
+			height:250;
+			width:250;
+		}
+
+
+Adding background image:
+
+
+.card{
+  back-grond:url('image url');
+}
+
+
+
+
+VIEW PORT: 
+
+
+
+Applying view port to height:
+
+  height:334vh;
+  width:65vw
+
+
+
+
+
+.card {
+    background-image: url("");
+    text-align: center;
+    height: 300px;
+    background-size: cover; == to fix the issue and fit the screen
+
+
+
+
+
+
+ADDING BACKGROUND IMAGE TO THE CONTAINER:
+----------------
+in css:
+-----
+.bg-container{
+    background-image: url('');
+    height: 80vh;
+    background-size: cover;
+
+}
+
+
+HTML:
+=====
+<div class="bg-container"></div>
+
+
+
+
+Adding background color to the card:
+==========
+css:
+------
+
+.card{
+    text-align: center;
+    background-color: white;
+}
+
+
+
+
+
+html:
+--------<div class="bg-container">
+          <div class="card">
+              <h1>TOURISM</h1>
+              <p>Plan where ever you want to go</p>
+              <button>Lets get started</button>
+          </div>
+
+
+
+
+ADDING HEIGHT AND WIDTH TO THE BUTTON AND ALSO STYLES:
+------------------------
+in css:
+-------
+.button{
+    height: 36px;
+    width: 40vw;
+    background-color: lightgrey;
+}
+
+
+
+
+
+HTML:
+-------<button class="button">Lets get started</button>
+
+
+
+
+
+
+
+
+In css we can represnt in multiple ways:
+-----------
+1.HEX CODES (#2334)
+
+
+
+We can change the button style for the corners:
+
+BORDER PROPERTIES ARE :
+
+1.BOREDR RADIUS
+2.STYLE
+3.COLOR
+4.WIDTH
+
+
+
+
+We can get rounded corners for the webpage or card?
+
+.card{
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px ;
+}
+
+
+
+
+Spacing inside the card:
+-------------
+
+.card{
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+    padding: 20px; this is spacing syntax
+}
+
+
+
+
+
+HTML CLASS:
+-----------
+Figma:which used to design pages

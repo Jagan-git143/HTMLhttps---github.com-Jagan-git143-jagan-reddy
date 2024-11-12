@@ -1,0 +1,13 @@
+Html5: it is latest version of html it contains headings, images, anchor etc...
+1.<svg>
+2.canvas
+3.drag drop box
+4.data attribute
+
+to pracrtice we can use:
+----codepen--
+---free code camp---
+---design:
+----Figma---
+--------drible--
+----------behnace

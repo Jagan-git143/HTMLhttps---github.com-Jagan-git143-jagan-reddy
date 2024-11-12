@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="main.py">
+    <h2>create a account</h2>
+    <label for="as"></label>password<input type="password" name="pwd" id="as" value="" min="5" max="10">
+    <br><label for="br">first name:</label>
+    <input type="text" placeholder="enter first name" id="br"></br>
+    <br><label for="ar">Last Name:</label>
+    <input type="text" placeholder="enter last name" id="ar">
+    
+    <br><div><label for="ae">mobile number:</label><input type="number" placeholder="enter mobile number" id="ae"></div></br>
+    <div><br>
+        <label for="aw">email</label>
+        <input type="email" placeholder="enter email" id="aw" required>
+    </div>
+    <div><br>
+        <label for="aq"></label>datetime:<input type="datetime-local" name="datetime" id="aq">
+    </div>
+    <div><br>
+        <label for="az"></label>Enter url<input type="url" name="url" id="az" disabled>
+    </div>
+    <div>
+<h3><ud>select the course:</ud></h3>
+<select name="branch" id="brn" multiple sixe="8"><option value="">choose course</option>
+<optgroup label="engineering">
+    <option value="cse">cse</option>
+    <option value="ece">ece</option>
+    <option value="ds">ds</option>
+    <option value="civil">civil</option>
+    <option value="It">It</option>
+    <option value="ec">ec</option>
+    </optgroup>
+    </div>
+ <div> 
+<optgroup label="degree">
+    <option value="BBA">BBA</option>
+    <option value="Bcom">BCom</option>
+    <option value="BSC">BSC</option>
+
+</optgroup>
+ </div>
+ <div>
+    <label for="ax">male</label>
+    <input type="checkbo" name="" id="">
+    <p>select one gender</p>
+    <br><label for="ax"></label>male<input type="radio" name="male" id="ax">
+    <label for="ax"></label>female<input type="radio" name="female" id="ax">
+ </div>
+ <div>
+    <label for="ac"></label>choose prefer color<input type="color" name="pink" id="ac" disabled required>
+ </div>
+<label for="ab"></label>Upload a file<input type="file" name="" id="ab">
+<button>submit</button>
+
+
+
+    </form>
+
+
+</body>
+</html>
